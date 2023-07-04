@@ -9,5 +9,9 @@ router
 .route("/finances")
 .get((req, res) => amountController.getAll(req, res));
 
+router
+.route("/finances")
+.delete((req, res) => amountController.deleteById(req, res));
+
 
 module.exports = router
