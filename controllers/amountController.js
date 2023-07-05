@@ -28,7 +28,7 @@ const amountController = {
   },
   deleteById: async (req, res) => {
     try {
-      const id = req.body;
+      const id = req.params.id;
       const amountId = await AmountModel.findById(id);
 
       if (!amountId) {

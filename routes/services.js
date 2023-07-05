@@ -10,7 +10,7 @@ router
 .get((req, res) => amountController.getAll(req, res));
 
 router
-.route("/finances")
+.route("/finances/:id")
 .delete((req, res) => amountController.deleteById(req, res));
 
 
