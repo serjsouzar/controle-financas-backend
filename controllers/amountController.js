@@ -6,8 +6,7 @@ const amountController = {
       const newAmount = {
         title: req.body.title,
         value: req.body.value,
-        outcome: req.body.outcome,
-        checkBox: req.body.checkBox 
+        outcome: req.body.outcome, 
       };
 
       const response = await AmountModel.create(newAmount);

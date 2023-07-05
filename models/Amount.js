@@ -13,10 +13,6 @@ const amountSchema = new Schema({
   outcome:{
     type: Boolean,
     required: true
-  },
-  checkBox:{
-    type: Boolean,
-    required: true
   }
 }, {timestamps: true})
 
